@@ -1,0 +1,12 @@
+<h1>Stupid Coaching</h1>
+<form action="/ask" method="request">
+
+  <li><%= params[:question] %></li>
+  <li>-You</li>
+
+  <li><%= @answer %></li>
+  <li>-Your coach</li>
+
+</form>
+
+ <%= link_to "Ask a new question", ask_path, class: 'btn btn-primary' %>
